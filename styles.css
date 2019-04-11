@@ -31,6 +31,8 @@
 body {
     margin: 0;
     font-family: 'FuturaPT';
+    display: flex;
+    
 }
 
 img {
@@ -38,6 +40,11 @@ img {
 }
 
 .page-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
     padding-top: 100px;
     display: flex;
     flex-direction: column;
@@ -49,6 +56,7 @@ section {
 }
 
 p, small {
+
     font-family: 'Proxima Nova';
     color: #2A2A2A;
 }
@@ -63,7 +71,8 @@ p, small {
 
 nav {
     background-color: #c33;
-    /* position: fixed; */
+    position: fixed;
+    justify-content: space-between; 
     width: 100%;
 }
 
@@ -71,6 +80,9 @@ nav {
     color: #FFF;
     list-style: none;
     margin: 0;
+    justify-content: flex-start;
+    display: flex;
+   
 } 
 
 .logo {
@@ -93,25 +105,45 @@ nav {
             3. MAIN SECTION
 =============================================
 */
+#main-section {
+    display: flex;
+}
+main {
+    flex-basis: 80%;
+}
+.main-news-container {
+    display: flex;
+    justify-content: space-between;
+}
 
-
-.main-news {
+.main-news { 
     margin: 10px;
+    flex-basis: 600px;
+    flex-shrink: 1;
 }
 
 .secondary-main-news-container {
     margin: 10px;
+    flex-basis: 300px;
+    flex-shrink: 1;
+
 }
 
-
+.less-relevant-main-news-container {
+    display: flex;
+    justify-content: space-between;
+}
 .less-relevant-main-news {
     margin: 5px;
+    flex-basis: 200px
+    padding: 5px;
 }
 
 aside {
     margin-left: 40px;
     background: #FAFAFA;
     padding: 20px;
+    flex-basis: 20%;
 }
 
 .small-news + .small-news {
@@ -292,6 +324,7 @@ img{
 */
 
 footer {
+    display: flex;
     width: 100%;
     margin-top: 30px;
     padding-top: 20px;
@@ -300,6 +333,9 @@ footer {
 
 .footer-links-container {
     max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+
 }
 
 .footer-links {
