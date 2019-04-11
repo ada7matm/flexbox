@@ -39,6 +39,9 @@ img {
 
 .page-container {
     padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section {
@@ -67,6 +70,7 @@ nav {
     color: #FFF;
     list-style: none;
     margin: 0;
+    display: flex;
 } 
 
 .logo {
@@ -89,25 +93,50 @@ nav {
             3. MAIN SECTION
 =============================================
 */
-
-
+main{
+    flex-wrap: wrap;
+    align-content: center;
+}
+#main-section{
+    display: flex;
+    
+    flex-direction: row;
+}
+.main-news-container{
+    display: flex;
+    flex-direction: row;
+}
 .main-news {
     margin: 10px;
+    flex-basis: 1000px;
 }
 
 .secondary-main-news-container {
     margin: 10px;
+    flex-basis: 550px;
 }
-
+.less-relevant-main-news-container{
+    display: flex;
+    flex-direction: row;
+    max-width: 850px;
+    margin-left: 70px;
+}
 
 .less-relevant-main-news {
     margin: 5px;
+    flex-direction: row;
+    flex-grow: grow;
+    flex-basis: 1000px;
+   
 }
 
 aside {
     margin-left: 40px;
     background: #FAFAFA;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 500px;
 }
 
 .small-news + .small-news {
