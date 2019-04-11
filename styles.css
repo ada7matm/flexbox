@@ -39,6 +39,9 @@ img {
 
 .page-container {
     padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section {
@@ -61,12 +64,18 @@ nav {
     background-color: #c33;
     position: fixed;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .menu {
     color: #FFF;
     list-style: none;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 } 
 
 .logo {
@@ -76,6 +85,7 @@ nav {
     transform: translateX(-50%) scale(2);
     right: 0;
     top: 0;
+    justify-content: flex-end;
 }
 
 .menu-item {
@@ -89,17 +99,40 @@ nav {
             3. MAIN SECTION
 =============================================
 */
+/*  */
+
+#main-section {
+    display: flex;
+    align-content: center;
+}
 
 
 .main-news {
     margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 600px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.main-news-container {
+    display: flex;
+    flex-direction: row;
 }
 
 .secondary-main-news-container {
     margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-basis: 300px;
 }
 
-
+.less-relevant-main-news-container{
+    display: flex;
+    flex-direction: row;
+}
 .less-relevant-main-news {
     margin: 5px;
 }
@@ -107,7 +140,7 @@ nav {
 aside {
     margin-left: 40px;
     background: #FAFAFA;
-    padding: 20px;
+    padding: 20px;  
 }
 
 .small-news + .small-news {
