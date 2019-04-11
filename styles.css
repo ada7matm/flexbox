@@ -16,6 +16,7 @@
             1. GENERAL
 =============================================
 */
+
 @font-face {
     font-family: 'Proxima Nova';
     src: url('fonts/ProximaNova-Regular.otf');
@@ -39,6 +40,9 @@ img {
 
 .page-container {
     padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section {
@@ -49,7 +53,6 @@ p, small {
     font-family: 'Proxima Nova';
     color: #2A2A2A;
 }
-
 
 /*
 =============================================
@@ -67,7 +70,9 @@ nav {
     color: #FFF;
     list-style: none;
     margin: 0;
-} 
+    height: 55px;
+    display: flex;
+}
 
 .logo {
     width: auto;
@@ -90,15 +95,38 @@ nav {
 =============================================
 */
 
+#main-section {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+section {
+    max-width: 1200px;
+}
+
+.main-news-container {
+    display: flex;
+    flex-basis: 80%;
+}
 
 .main-news {
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 600px;
+    flex-grow: 2;
 }
 
 .secondary-main-news-container {
     margin: 10px;
 }
 
+.less-relevant-main-news-container {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
 
 .less-relevant-main-news {
     margin: 5px;
@@ -108,11 +136,17 @@ aside {
     margin-left: 40px;
     background: #FAFAFA;
     padding: 20px;
+    flex-basis: 40%;
 }
 
-.small-news + .small-news {
+.small-news+.small-news {
     margin-top: 10px;
     border-top: 1px solid #d0d0d0;
+}
+
+.noticia {
+    width: 200px;
+    height: 133.33px;
 }
 
 /*
@@ -126,7 +160,12 @@ aside {
     margin: 50px 0;
     max-width: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
+
 
 .video-title {
     color: #FFF;
@@ -136,7 +175,19 @@ aside {
 
 .videos-container {
     max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-grow: 0;
+    flex-basis: 650px;
+}   
+
+.video-container {
+    flex-basis: 280px;
 }
+
+
+
 
 .video-container img {
     border: 5px solid #FFF;
@@ -154,16 +205,14 @@ aside {
 */
 
 .more-news-main-column {
-    padding: 10px 20px; 
+    padding: 10px 20px;
 }
 
-.more-news-secondary-column article,
-.more-news-main-column article {
+.more-news-secondary-column article, .more-news-main-column article {
     padding: 10px;
 }
 
-.more-news-secondary-column article + article,
-.more-news-main-column article + article {
+.more-news-secondary-column article+article, .more-news-main-column article+article {
     margin-top: 10px;
     border-top: 1px solid #d0d0d0;
 }
