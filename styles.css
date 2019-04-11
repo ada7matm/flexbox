@@ -39,6 +39,9 @@ img {
 
 .page-container {
     padding-top: 100px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
 }
 
 section {
@@ -64,6 +67,7 @@ nav {
 }
 
 .menu {
+    display:flex;
     color: #FFF;
     list-style: none;
     margin: 0;
@@ -175,7 +179,7 @@ aside {
 
 .more-news-main-column article:nth-of-type(2) img {
     max-width: 250px;
-    height: auto;
+    height: 166px;
     margin-right: 20px;
 }
 
@@ -207,6 +211,66 @@ aside {
     margin: 0 0 0 10px;
 }
 
+.got {
+    width:580px;
+    height:400px;
+}
+
+.facebook {
+    width:200px;
+    height:133px;
+}
+
+
+#more-news {
+    width:1000px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+.more-news-container {
+    display:flex;
+    flex-direction:row; 
+    justify-content:space-around;
+}
+.more-news-main-column {
+    width:650px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+.more-news-secondary-column {
+    width: 270px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+.planet {
+    display:flex;
+    flex-direction:row; 
+}
+.planetpic {
+    width:250px;
+    height:166px;
+}
+.more-news-aside {
+    width:240px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+.thumbnail-container{
+    display:flex;
+    flex-direction:row; 
+}
+
+.footer-links-container {
+    display:flex;
+    flex-direction:row; 
+    justify-content: flex-start;
+}
 /*
 =============================================
             6. FOOTER
@@ -222,6 +286,7 @@ footer {
 
 .footer-links-container {
     max-width: 1200px;
+    margin-left: 60px;
 }
 
 .footer-links {
