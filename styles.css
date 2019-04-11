@@ -122,6 +122,8 @@ aside {
 */
 
 #videos-section {
+    display: flex;
+    flex-direction: column;
     background-color: #000;
     margin: 50px 0;
     max-width: 100%;
@@ -135,12 +137,22 @@ aside {
 }
 
 .videos-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     max-width: 1200px;
+}
+
+.video-container {
+    flex-basis: 280px;
+    margin-bottom: 40px;
 }
 
 .video-container img {
     border: 5px solid #FFF;
     box-sizing: border-box;
+    flex-basis: 280px;
 }
 
 .video-container h3 {
@@ -153,8 +165,69 @@ aside {
 =============================================
 */
 
+#more-news {
+    display: flex;
+    flex-direction: row;
+}
+
+.more-news-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.more-news-main-column {
+    display: flex;
+    flex-basis: 600px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.more-news-secondary-column {
+    display: flex;
+    flex-basis: 270px;
+    flex-direction: column;
+}
+
+.more-news-aside {
+    display: flex;
+    flex-basis: 200px;
+    max-width: 200px;
+    flex-direction: column;
+}
+
+.aside-news {
+    flex-basis: 200px;
+}
+
+.aside-news img {
+    width: 200px;
+}
+
+.thumbnails-container {
+    display: flex;
+    flex-basis: 200px;
+    flex-direction: column;
+}
+
+.thumbnail-container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px, 0px;
+}
+
+.thumbnails {
+    display: flex;
+    flex-basis: 60px;
+}
+
+.thumbnail-description {
+    max-width: 100px
+}
+
+
 .more-news-main-column {
     padding: 10px 20px; 
+    justify-content: column;
 }
 
 .more-news-secondary-column article,
@@ -171,6 +244,12 @@ aside {
 .more-news-main-column article:nth-of-type(1) h1 {
     font-size: 38px;
     margin: 15px 0;
+}
+
+.more-news-main-column article:nth-of-type(2) {
+    display: flex;
+    flex-basis: row;
+    height: 180px;
 }
 
 .more-news-main-column article:nth-of-type(2) img {
@@ -214,13 +293,17 @@ aside {
 */
 
 footer {
+    display: flex;
     width: 100%;
     margin-top: 30px;
     padding-top: 20px;
     border-top: 4px solid #c3333c;
+    
 }
 
 .footer-links-container {
+    display: flex;
+    flex-direction: row;
     max-width: 1200px;
 }
 
