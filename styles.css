@@ -31,6 +31,9 @@
 body {
     margin: 0;
     font-family: 'FuturaPT';
+    display: flex;
+   
+    
 }
 
 img {
@@ -39,6 +42,11 @@ img {
 
 .page-container {
     padding-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%;
+    display: flex;
+
 }
 
 section {
@@ -48,6 +56,7 @@ section {
 p, small {
     font-family: 'Proxima Nova';
     color: #2A2A2A;
+    line-height: 23px;
 }
 
 
@@ -61,12 +70,19 @@ nav {
     background-color: #c33;
     position: fixed;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .menu {
     color: #FFF;
     list-style: none;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+
 } 
 
 .logo {
@@ -76,6 +92,9 @@ nav {
     transform: translateX(-50%) scale(2);
     right: 0;
     top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .menu-item {
@@ -84,36 +103,97 @@ nav {
     position: relative;
 }
 
+main {
+    flex-basis: 80%;
+}
 /*
 =============================================
             3. MAIN SECTION
 =============================================
 */
 
+#main-section {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+}
 
 .main-news {
     margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: 600px;
+    flex-shrink: 1;
 }
 
+
+.main-news-container {
+    display: flex;
+    justify-content: center;
+}
 .secondary-main-news-container {
     margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 
 .less-relevant-main-news {
     margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-basis: 200px;
+    align-items: center;
+
+}
+
+.less-relevant-main-news-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
 }
 
 aside {
     margin-left: 40px;
     background: #FAFAFA;
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: 20%;
 }
 
 .small-news + .small-news {
     margin-top: 10px;
     border-top: 1px solid #d0d0d0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
 }
+
+.small-news {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+
 
 /*
 =============================================
