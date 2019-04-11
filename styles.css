@@ -67,6 +67,7 @@ nav {
     color: #FFF;
     list-style: none;
     margin: 0;
+    display: flex;
 } 
 
 .logo {
@@ -97,11 +98,13 @@ nav {
 
 .secondary-main-news-container {
     margin: 10px;
+    display: flex;
+    flex-direction: column;
 }
-
 
 .less-relevant-main-news {
     margin: 5px;
+  
 }
 
 aside {
@@ -126,6 +129,10 @@ aside {
     margin: 50px 0;
     max-width: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
 }
 
 .video-title {
@@ -136,11 +143,18 @@ aside {
 
 .videos-container {
     max-width: 1200px;
-}
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
+}
+.video-container{
+    flex-basis: 25%;
+}
 .video-container img {
     border: 5px solid #FFF;
     box-sizing: border-box;
+    width: 280px;
 }
 
 .video-container h3 {
@@ -242,4 +256,28 @@ footer {
     font-family: 'Proxima Nova';
     font-size: 13px;
     color: #BEBEBE;
+}
+#main-section{
+    display: flex;
+}
+
+.less-relevant-main-news-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main-news-container{
+    display: flex;
+}
+.secondary-main-news img{
+    width: 278px;
+}
+.page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.section {
+    max-width: 1200px;
 }
