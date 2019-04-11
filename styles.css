@@ -38,9 +38,12 @@ img {
 }
 
 .page-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     padding-top: 100px;
     height: 100%;
-    justify-content: center;
+
 }
 
 section {
@@ -106,6 +109,7 @@ nav {
 #main-section {
     display: flex;
     flex-basis: 1000px;
+    max-height: 730px;
 }
 
 main {
@@ -157,6 +161,7 @@ aside {
 #videos-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #000;
     margin: 50px 0;
     max-width: 100%;
@@ -338,6 +343,8 @@ footer {
     display: flex;
     flex-direction: row;
     max-width: 1200px;
+    justify-content: center;
+    margin-left: 100px;
 }
 
 .footer-links {
