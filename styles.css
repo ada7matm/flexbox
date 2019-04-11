@@ -39,6 +39,9 @@ img {
 
 .page-container {
     padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section {
@@ -126,6 +129,9 @@ aside {
     margin: 50px 0;
     max-width: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center; 
 }
 
 .video-title {
@@ -136,8 +142,15 @@ aside {
 
 .videos-container {
     max-width: 1200px;
+    flex-basis: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-grow: 0;
 }
-
+.video-container{
+    flex-basis: 280px;
+}
 .video-container img {
     border: 5px solid #FFF;
     box-sizing: border-box;
@@ -152,11 +165,25 @@ aside {
             5. MORE NEWS SECTION
 =============================================
 */
-
+#more-news{
+    display: flex;
+}
+.more-news-container{
+    display: flex;
+    flex-basis: 400px;
+    flex-grow: 4;
+}
 .more-news-main-column {
     padding: 10px 20px; 
 }
-
+.more-news-secondary-column{
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+.more-news-main-column{
+    flex-basis: 200px;
+    flex-grow: 2;
+}
 .more-news-secondary-column article,
 .more-news-main-column article {
     padding: 10px;
@@ -182,9 +209,15 @@ aside {
 .more-news-main-column .text-container h2 {
     margin-top: 0;
 }
-
+.flex-art{
+    display: flex;
+    align-items: flex-start;
+}
 .more-news-aside {
     margin-left: 0;
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: column;
 }
 
 .more-news-main-column {
@@ -196,6 +229,7 @@ aside {
 .thumbnail-container {
     min-width: 200px;
     margin: 20px 0;
+    display: flex;
 }
 
 .thumbnail {
@@ -222,6 +256,7 @@ footer {
 
 .footer-links-container {
     max-width: 1200px;
+    display: flex;
 }
 
 .footer-links {
