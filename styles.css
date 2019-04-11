@@ -31,7 +31,6 @@
 body {
     margin: 0;
     font-family: 'FuturaPT';
-
 }
 
 img {
@@ -39,6 +38,9 @@ img {
 }
 
 .page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 100px;
     display: flex;
     align-items: center;
@@ -208,9 +210,26 @@ aside {
             5. MORE NEWS SECTION
 =============================================
 */
+#more-news {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+}
 
+.more-news-container {
+    display: flex;
+}
+
+.more-news-secondary-column, .more-news-aside {
+    flex-basis: 500px;
+}
 .more-news-main-column {
     padding: 10px 20px; 
+}
+.main-news-article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .more-news-secondary-column article,
@@ -240,6 +259,7 @@ aside {
 }
 
 .more-news-aside {
+    /* flex-basis: 100px; */
     margin-left: 0;
 }
 
@@ -249,7 +269,9 @@ aside {
     margin: 0 20px;
 }
 
+
 .thumbnail-container {
+    display: flex;
     min-width: 200px;
     margin: 20px 0;
 }
@@ -277,7 +299,9 @@ footer {
 }
 
 .footer-links-container {
+    display: flex;
     max-width: 1200px;
+    margin-left: 6%;
 }
 
 .footer-links {
