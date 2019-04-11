@@ -31,6 +31,7 @@
 body {
     margin: 0;
     font-family: 'FuturaPT';
+    display: flex;
 }
 
 img {
@@ -153,19 +154,43 @@ aside {
 =============================================
 */
 
-.more-news-main-column {
-    padding: 10px 20px; 
+#more-news{
+    display: flex;
 }
 
+.more-news-main-column {
+    padding: 10px 20px; 
+    display: flex;
+    /* align-items: flex-start; */
+    flex-wrap: wrap;
+
+
+}
 .more-news-secondary-column article,
 .more-news-main-column article {
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.more-news-secondary-column {
+    
 }
 
 .more-news-secondary-column article + article,
 .more-news-main-column article + article {
     margin-top: 10px;
     border-top: 1px solid #d0d0d0;
+    align-items: flex-start;
+
+}
+.articulo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+}
+.more-news-container{
+display: flex;
 }
 
 .more-news-main-column article:nth-of-type(1) h1 {
@@ -185,8 +210,16 @@ aside {
 
 .more-news-aside {
     margin-left: 0;
-}
+    display: flex;
+  
 
+}
+.aside-news{
+    align-content: center;
+   
+   
+
+}
 .more-news-main-column {
     border-right: 1px solid #d0d0d0;
     border-left: 1px solid #d0d0d0;
@@ -196,6 +229,7 @@ aside {
 .thumbnail-container {
     min-width: 200px;
     margin: 20px 0;
+    display: flex;
 }
 
 .thumbnail {
@@ -218,10 +252,13 @@ footer {
     margin-top: 30px;
     padding-top: 20px;
     border-top: 4px solid #c3333c;
+    
 }
 
 .footer-links-container {
     max-width: 1200px;
+    display:flex;
+    margin-left: 6%;
 }
 
 .footer-links {
