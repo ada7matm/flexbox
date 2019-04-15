@@ -501,13 +501,8 @@ footer {
     .thumbnails-container {
         margin-left: 15px;
     }
-
     .videos-container {
         flex-direction: column;
         justify-content: center;
     }   
-
-
-
-
 }
